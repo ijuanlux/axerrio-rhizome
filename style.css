@@ -104,11 +104,11 @@ h2{font-size:clamp(2.2rem,6vw,5.2rem);margin-bottom:.4em}
 .glow h3{color:var(--accent)}
 .soft h3{color:var(--accent)}
 
-/* stat cards */
-.stat .stat-num{display:flex;align-items:baseline;gap:.15em;flex-wrap:wrap;margin-bottom:.6em}
-.stat .num{font-size:clamp(2.6rem,5vw,4.2rem);font-weight:700;color:var(--accent);line-height:1}
-.stat .unit{font-size:1.4rem;color:var(--accent);font-weight:500}
-.stat .to{font-family:'Space Mono',monospace;font-size:.85rem;color:var(--fg);margin-left:.4em;padding:.2em .6em;border:1px solid var(--line);border-radius:100px}
+/* stat cards — before → after */
+.stat .stat-ba{display:flex;align-items:baseline;gap:.45em;flex-wrap:wrap;margin-bottom:.7em}
+.stat .was{font-family:'Space Mono',monospace;font-size:.95rem;color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(255,122,107,.75);text-decoration-thickness:2px}
+.stat .ba-arrow{color:var(--muted);font-size:1.15rem;line-height:1}
+.stat .now{font-size:clamp(1.7rem,3vw,2.7rem);font-weight:700;line-height:1.05;letter-spacing:-.01em}
 
 /* after pinned */
 .after{background:linear-gradient(180deg,transparent,rgba(94,246,198,.03),transparent)}
@@ -126,8 +126,8 @@ h2{font-size:clamp(2.2rem,6vw,5.2rem);margin-bottom:.4em}
 .close{align-items:center;text-align:center}
 .close .body{margin:0 auto}
 .close-h{font-size:clamp(2.4rem,7vw,6rem);margin-bottom:.5em}
-.roles{grid-template-columns:repeat(4,1fr);margin:5vh 0 1vh;text-align:left}
-@media(max-width:1200px){.roles{grid-template-columns:repeat(2,1fr)}}
+.roles{grid-template-columns:repeat(3,1fr);margin:5vh 0 1vh;text-align:left}
+@media(max-width:1000px){.roles{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.roles{grid-template-columns:1fr}}
 .role{display:flex;flex-direction:column}
 .role-ic{font-size:2rem;color:var(--accent);margin-bottom:.3em}

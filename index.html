@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css?v=7" />
 <script type="importmap">
 { "imports": {
   "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
@@ -109,22 +109,22 @@
       </div>
       <div class="grid stats">
         <div class="card stat reveal">
-          <div class="stat-num"><span class="num" data-to="3">0</span><span class="unit">mo</span><span class="to">→ 1 session</span></div>
+          <div class="stat-ba"><span class="was">~3 months</span><span class="ba-arrow">→</span><span class="now accent">1 session</span></div>
           <h3>RON-WTS02 rebuild</h3>
           <p>Stalled ~3 months. Fully rebuilt in <b>one session</b> (2026-08-15): app, COM registration, TLS, printers, RemoteApp.</p>
         </div>
         <div class="card stat reveal">
-          <div class="stat-num"><span class="num" data-to="0">0</span><span class="unit">days</span><span class="to">same-day</span></div>
+          <div class="stat-ba"><span class="was">weeks</span><span class="ba-arrow">→</span><span class="now accent">same day</span></div>
           <h3>Expired customer certs</h3>
           <p>Weeks of back-and-forth tickets, now <b>same-day fixes</b> (sqflora 2026-08-04, divflo right after).</p>
         </div>
         <div class="card stat reveal">
-          <div class="stat-num"><span class="num" data-to="100">0</span><span class="unit">%</span></div>
+          <div class="stat-ba"><span class="was">partial</span><span class="ba-arrow">→</span><span class="now accent"><span class="num" data-to="100">0</span>%</span></div>
           <h3>Estate reachable</h3>
           <p>From partial and person-dependent to <b>100% of the 24x7 on-prem estate operable by tooling</b> (2026-08-15).</p>
         </div>
         <div class="card stat reveal">
-          <div class="stat-num"><span class="num" data-to="0">0</span><span class="unit"></span><span class="to">weeks → minutes</span></div>
+          <div class="stat-ba"><span class="was">weeks</span><span class="ba-arrow">→</span><span class="now accent">minutes</span></div>
           <h3>Legacy ABS updates</h3>
           <p>Weeks of chasing knowledge and manual installs collapse to <b>minutes of execution</b> via the update skill.</p>
         </div>
@@ -191,8 +191,8 @@
     <!-- CLOSE -->
     <section class="panel close">
       <p class="tag mono reveal">from today</p>
-      <h2 class="close-h reveal">A new era for<br><span class="accent">Customer Support · On-Call · Platform · DBAs.</span></h2>
-      <p class="body reveal">One methodology, four teams. Same brain, same network, same guardrails, different jobs.</p>
+      <h2 class="close-h reveal">A new era for<br><span class="accent">Support · On-Call · Platform · DBAs · Security · Devs.</span></h2>
+      <p class="body reveal">One methodology, six teams. Same brain, same network, same guardrails, different jobs.</p>
 
       <div class="grid roles">
         <div class="card role glow reveal">
@@ -235,6 +235,26 @@
             <li>Version and update work becomes minutes</li>
           </ul>
         </div>
+        <div class="card role glow reveal">
+          <span class="role-ic">⛨</span>
+          <h3>Cybersecurity</h3>
+          <p>Least-privilege by design and a shrinking attack surface. Secrets out of code, scoped credentials, cert rotation and expiry monitoring, every access audited.</p>
+          <ul class="role-list">
+            <li>Secrets <b class="accent">encrypted, never in the repo</b> (the vault)</li>
+            <li>Your own credential, scoped and logged, no escalation</li>
+            <li>Certs caught before they expire, not after</li>
+          </ul>
+        </div>
+        <div class="card role glow reveal">
+          <span class="role-ic">❯</span>
+          <h3>Devs</h3>
+          <p>Ship faster against development servers. Reach dev boxes, run builds and checks, reproduce issues where the code runs, without waiting on access or hand-offs.</p>
+          <ul class="role-list">
+            <li>Instant, safe reach to <b class="accent">development servers</b></li>
+            <li>Reproduce and debug where the code actually runs</li>
+            <li>Less waiting on access, more shipping</li>
+          </ul>
+        </div>
       </div>
 
       <p class="body reveal center-body">Install Rhizome. Run the estate blind, with guardrails.<br><b>Rip out any one person, and nothing dies.</b></p>
@@ -248,6 +268,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="https://unpkg.com/split-type"></script>
-  <script type="module" src="main.js?v=6"></script>
+  <script type="module" src="main.js?v=7"></script>
 </body>
 </html>
