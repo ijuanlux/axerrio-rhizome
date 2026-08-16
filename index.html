@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Axerrio Rhizome</title>
+<link rel="icon" href="assets/axbadge.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <div id="preloader">
+    <div class="pre-inner">
+      <img src="assets/axbadge.png" class="pre-badge" alt="" />
+      <span class="count">0</span>
+    </div>
+  </div>
+
+  <canvas id="bg"></canvas>
+
+  <!-- top brand -->
+  <header class="topbar">
+    <div class="brand"><img src="assets/axbadge.png" alt="AX" class="brand-badge" /><span>Axerrio&nbsp;<b>Rhizome</b></span></div>
+    <div class="topbar-tag mono">agentic ops · v1</div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="videos/network.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-scrim"></div>
+      <div class="hero-content">
+        <p class="kicker mono reveal-line">A new methodology, from today</p>
+        <h1 class="hero-title"><span class="reveal">Axerrio</span> <span class="reveal accent">Rhizome</span></h1>
+        <p class="hero-sub reveal-line">The agentic operations layer for the Axerrio estate.<br>One brain. One network. Every server.</p>
+        <div class="hero-stat reveal-line"><span class="big accent">Months</span><span class="arrow">→</span><span class="big">Minutes</span></div>
+        <a href="#before" class="magnetic btn reveal-line">See the shift</a>
+      </div>
+      <div class="scroll-cue mono">scroll ↓</div>
+    </section>
+
+    <!-- METAPHOR -->
+    <section class="panel metaphor">
+      <div class="split">
+        <div class="split-text">
+          <p class="tag mono reveal">why the name</p>
+          <h2 class="reveal">One living network,<br>underground.</h2>
+          <p class="body reveal">A rhizome is how ginger and bamboo grow. Above ground you see separate plants; underground there is <b>one organism</b> feeding all of them. It sprouts wherever it is needed, and if you rip one plant out, the network survives and regrows.</p>
+          <p class="body reveal">That is the design. One brain (Claude), one root network (the MCP), shoots on every box (agents), shared DNA (the skills). <b class="accent">Rip out any single person and nothing dies.</b></p>
+        </div>
+        <div class="split-media reveal">
+          <video autoplay muted loop playsinline preload="none" class="framed">
+            <source src="videos/shoots.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE -->
+    <section class="panel before" id="before">
+      <div class="section-head">
+        <p class="tag mono reveal">before rhizome</p>
+        <h2 class="reveal">The estate ran on <span class="warn">one person's memory.</span></h2>
+        <p class="body wide reveal">Projects sat still for months. Not because the work was hard, but because <b>executing was expensive</b>: the knowledge lived in specific heads, access took days to arrange, every step was manual and undocumented.</p>
+      </div>
+      <div class="grid pains">
+        <div class="card pain reveal"><span class="ic">⧗</span><h3>Months of waiting</h3><p>Simple tasks stalled for weeks because the one who knew was busy, away, or gone.</p></div>
+        <div class="card pain reveal"><span class="ic">⚿</span><h3>Access took days</h3><p>VPN, jump hosts, credentials, forest trusts, arranged by hand, ticket by ticket.</p></div>
+        <div class="card pain reveal"><span class="ic">✎</span><h3>Incomplete manuals</h3><p>Runbooks half-written or out of date. The real steps lived in someone's head.</p></div>
+        <div class="card pain reveal"><span class="ic">⌗</span><h3>Knowledge scattered</h3><p>Spread across chats, screenshots and memory. Nothing compounded. Everyone re-learned.</p></div>
+        <div class="card pain reveal"><span class="ic">⚇</span><h3>Bus factor of one</h3><p>If the person who knew stepped away, the estate stepped away with them.</p></div>
+        <div class="card pain reveal"><span class="ic">⟿</span><h3>Cables unplugged</h3><p>Hosts we owned but could not reach. Trust gaps. Hardened DCs. Dead ends everywhere.</p></div>
+      </div>
+    </section>
+
+    <!-- AFTER (pinned reveal) -->
+    <section class="panel after" id="after">
+      <div class="after-inner">
+        <p class="tag mono reveal">after rhizome</p>
+        <h2 class="after-h">The network is <span class="accent">plugged in.</span></h2>
+        <div class="grid three">
+          <div class="card glow reveal"><h3>Access is solved</h3><p>VPN + jump + your own credential. 100% of the 24x7 on-prem estate reachable by tooling, hardened DCs included.</p></div>
+          <div class="card glow reveal"><h3>Knowledge is encoded</h3><p>Skills, runbooks and a live estate inventory. The steps are written down and executable, not remembered.</p></div>
+          <div class="card glow reveal"><h3>Execution is reproducible</h3><p>MCP tools, golden AMIs, guardrails. Any authorized operator runs the estate blind, and safely.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECEIPTS / stats -->
+    <section class="panel receipts">
+      <div class="section-head">
+        <p class="tag mono reveal">the receipts · measured, not marketing</p>
+        <h2 class="reveal">Real cases. Real time saved.</h2>
+      </div>
+      <div class="grid stats">
+        <div class="card stat reveal">
+          <div class="stat-num"><span class="num" data-to="3">0</span><span class="unit">mo</span><span class="to">→ 1 session</span></div>
+          <h3>RON-WTS02 rebuild</h3>
+          <p>Stalled ~3 months. Fully rebuilt in <b>one session</b> (2026-08-15): app, COM registration, TLS, printers, RemoteApp.</p>
+        </div>
+        <div class="card stat reveal">
+          <div class="stat-num"><span class="num" data-to="0">0</span><span class="unit">days</span><span class="to">same-day</span></div>
+          <h3>Expired customer certs</h3>
+          <p>Weeks of back-and-forth tickets, now <b>same-day fixes</b> (sqflora 2026-08-04, divflo right after).</p>
+        </div>
+        <div class="card stat reveal">
+          <div class="stat-num"><span class="num" data-to="100">0</span><span class="unit">%</span></div>
+          <h3>Estate reachable</h3>
+          <p>From partial and person-dependent to <b>100% of the 24x7 on-prem estate operable by tooling</b> (2026-08-15).</p>
+        </div>
+        <div class="card stat reveal">
+          <div class="stat-num"><span class="num" data-to="0">0</span><span class="unit"></span><span class="to">weeks → minutes</span></div>
+          <h3>Legacy ABS updates</h3>
+          <p>Weeks of chasing knowledge and manual installs collapse to <b>minutes of execution</b> via the update skill.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section class="panel how">
+      <div class="split reverse">
+        <div class="split-media reveal">
+          <video autoplay muted loop playsinline preload="none" class="framed">
+            <source src="videos/network.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="split-text">
+          <p class="tag mono reveal">how it works</p>
+          <h2 class="reveal">One organism,<br>four parts.</h2>
+          <ul class="how-list">
+            <li class="reveal"><b class="accent">One brain</b>, Claude, reasoning over the whole estate.</li>
+            <li class="reveal"><b class="accent">One root network</b>, the MCP jump reaches on-prem and AWS.</li>
+            <li class="reveal"><b class="accent">Shoots on every box</b>, pull-agents for customer datacenters the jump can't reach.</li>
+            <li class="reveal"><b class="accent">Shared DNA</b>, skills encode the doctrine so every operator acts the same.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILM -->
+    <section class="panel film">
+      <div class="section-head center-head">
+        <p class="tag mono reveal">see it in motion</p>
+        <h2 class="reveal">One estate. One organism.</h2>
+      </div>
+      <div class="film-wrap reveal">
+        <video class="film-video" controls playsinline preload="metadata" poster="videos/card1.png">
+          <source src="videos/axerrio-rhizome-film.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- COSMO -->
+    <section class="panel cosmo">
+      <div class="cosmo-inner">
+        <p class="tag mono reveal">the collateral engine</p>
+        <h2 class="reveal">Cosmo, the estate<br>that <span class="accent">keeps learning.</span></h2>
+        <p class="body wide reveal">Every case solved becomes a note in Cosmo, the shared knowledge graph. The reasoning behind a fix, the trigger of a failure, the gotcha nobody wrote down, captured, attributed, searchable. The next operator does not start over.</p>
+        <div class="grid three">
+          <div class="card soft reveal"><h3>Continuous learning</h3><p>Knowledge compounds instead of evaporating. The estate gets smarter with every incident.</p></div>
+          <div class="card soft reveal"><h3>One source of truth</h3><p>Linear, GitHub, Slack, Drive, Confluence, connected, so answers come from the record, not from memory.</p></div>
+          <div class="card soft reveal"><h3>Collateral support</h3><p>Runs alongside Rhizome. The doing and the knowing feed each other, on their own.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section class="panel impact">
+      <div class="impact-inner">
+        <p class="tag mono reveal">what it means</p>
+        <h2 class="reveal big-h">No more bus factor.<br>Human time goes where it belongs.</h2>
+        <p class="body wide reveal">Speed is only half of it. The estate no longer depends on "the one who knew." What stays on human time is <b>approvals and customer windows</b>, exactly the decisions that should stay human. Everything mechanical becomes reproducible, guarded, and fast.</p>
+      </div>
+    </section>
+
+    <!-- CLOSE -->
+    <section class="panel close">
+      <p class="tag mono reveal">from today</p>
+      <h2 class="close-h reveal">A new era for<br><span class="accent">Customer Support · Platform · DBAs.</span></h2>
+      <p class="body reveal">One methodology, three teams. Same brain, same network, same guardrails, different jobs.</p>
+
+      <div class="grid three roles">
+        <div class="card role glow reveal">
+          <span class="role-ic">◵</span>
+          <h3>Customer Support</h3>
+          <p>Resolve tenant incidents on the spot. Triage the alert, reach the box, apply the known runbook fix, instead of escalating and waiting on the one who knew.</p>
+          <ul class="role-list">
+            <li>From "who can look at this?" to <b class="accent">first-line resolution</b></li>
+            <li>Every fix is a written, repeatable runbook</li>
+            <li>Escalate with evidence, not guesswork</li>
+          </ul>
+        </div>
+        <div class="card role glow reveal">
+          <span class="role-ic">⬡</span>
+          <h3>Platform</h3>
+          <p>Operate the whole estate as code. On-prem and AWS reachable, forest trusts solved, certs and updates reproducible. The mechanics run themselves.</p>
+          <ul class="role-list">
+            <li><b class="accent">100%</b> of the 24x7 on-prem estate operable</li>
+            <li>Hardened DCs, trust gaps, dead ends, closed</li>
+            <li>Your time goes to approvals and windows</li>
+          </ul>
+        </div>
+        <div class="card role glow reveal">
+          <span class="role-ic">⛁</span>
+          <h3>DBAs</h3>
+          <p>SQL across every tenant through one hop. Scoped, safe access to run checks, versions and drains, with the destructive steps still gated to you.</p>
+          <ul class="role-list">
+            <li>One consistent path to every tenant database</li>
+            <li>Read and diagnose freely; <b class="accent">kills stay gated</b></li>
+            <li>Version and update work becomes minutes</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="body reveal center-body">Install Rhizome. Run the estate blind, with guardrails.<br><b>Rip out any one person, and nothing dies.</b></p>
+      <div class="brand big-brand reveal"><img src="assets/axbadge.png" alt="AX" /><span>Axerrio&nbsp;<b class="accent">Rhizome</b></span></div>
+      <p class="mono foot">One brain · one network · every server</p>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script type="module" src="main.js?v=6"></script>
+</body>
+</html>
