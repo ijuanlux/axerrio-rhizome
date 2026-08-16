@@ -32,7 +32,7 @@ b{font-weight:700}
 /* preloader */
 #preloader{position:fixed;inset:0;z-index:1000;background:#05070a;display:grid;place-items:center}
 .pre-inner{display:flex;flex-direction:column;align-items:center;gap:24px}
-.pre-badge{width:88px;height:88px;filter:drop-shadow(0 0 30px rgba(164,91,255,.6))}
+.pre-badge{width:auto;height:84px;filter:drop-shadow(0 0 30px rgba(164,91,255,.6))}
 #preloader .count{font-size:clamp(3rem,10vw,9rem);font-weight:700;color:var(--fg)}
 
 /* bg canvas */
@@ -41,7 +41,7 @@ b{font-weight:700}
 /* topbar */
 .topbar{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;mix-blend-mode:difference}
 .brand{display:flex;align-items:center;gap:12px;font-size:1.15rem;font-weight:500;letter-spacing:.01em}
-.brand-badge{width:40px;height:40px}
+.brand-badge{width:auto;height:40px}
 .topbar-tag{font-size:.75rem;color:var(--muted);letter-spacing:.15em;text-transform:uppercase}
 
 /* layout */
