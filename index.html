@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=13" />
+<link rel="stylesheet" href="style.css?v=14" />
 <script type="importmap">
 { "imports": {
   "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
@@ -131,6 +131,25 @@
       </div>
     </section>
 
+    <!-- SCALE -->
+    <section class="panel scale">
+      <div class="section-head">
+        <p class="tag mono reveal">the magnitude · every number verified live</p>
+        <h2 class="reveal">One tool. <span class="accent">The entire estate.</span></h2>
+        <p class="body wide reveal">Not a pilot on one server. Rhizome reaches a 26 year old ERP running across three separate worlds, on-prem forests, hosted forests and AWS, with versions spanning seven years of drift. Every figure below was read from the live estate, not estimated.</p>
+      </div>
+      <div class="grid stats figs">
+        <div class="card stat fig reveal"><div class="fig-n">Every</div><h3>Tenant and environment</h3><p>Mapped with per-box operability. One inventory, one access doctrine.</p></div>
+        <div class="card stat fig reveal"><div class="fig-n"><span class="num" data-to="3">0</span></div><h3>Worlds, one brain</h3><p>axe.local, hosted forests on their own domains, and AWS. One tool spans all three.</p></div>
+        <div class="card stat fig reveal"><div class="fig-n"><span class="num" data-to="100">0</span><span class="u">%</span></div><h3>On-prem operable</h3><p>The whole 24x7 estate reachable by tooling, hardened DCs included.</p></div>
+        <div class="card stat fig reveal"><div class="fig-n">0</div><h3>Forests without a trust</h3><p>The last two gaps, WWB and PKF, closed the same day (2026-08-15).</p></div>
+        <div class="card stat fig reveal"><div class="fig-n">1.8<span class="u">M</span></div><h3>Lines of VB6 underneath</h3><p>The ERP the estate still runs on, in production since around 2000.</p></div>
+        <div class="card stat fig reveal"><div class="fig-n">7<span class="u">yrs</span></div><h3>Version drift, read live</h3><p>Years of spread across the estate, surveyed in a single pass.</p></div>
+        <div class="card stat fig reveal"><div class="fig-n">0</div><h3>Privileges added</h3><p>It runs on your own credential. It can only do what you already can.</p></div>
+        <div class="card stat fig reveal"><div class="fig-n">1</div><h3>Day to map it all</h3><p>The estate map that had never existed, produced and written down in one day.</p></div>
+      </div>
+    </section>
+
     <!-- HOW -->
     <section class="panel how">
       <div class="split reverse">
@@ -176,6 +195,56 @@
           <div class="card soft reveal"><h3>One source of truth</h3><p>Linear, GitHub, Slack, Drive, Confluence, connected, so answers come from the record, not from memory.</p></div>
           <div class="card soft reveal"><h3>Collateral support</h3><p>Runs alongside Rhizome. The doing and the knowing feed each other, on their own.</p></div>
         </div>
+      </div>
+    </section>
+
+    <!-- MODERNIZATION -->
+    <section class="panel modern" id="modernization">
+      <div class="modern-inner">
+        <p class="tag mono reveal">the prize · abs modernization</p>
+        <h2 class="reveal">The modernization<br>does not ship <span class="accent">without this.</span></h2>
+        <p class="body wide reveal">The rewrite already exists: the VB6 ERP was ported to .NET 8 and a Svelte client, form by form. The target platform already exists: Kubernetes through Groot, static delivery on CloudFront, databases on RDS. What sits between them is not code and not infrastructure. It is <b>the estate itself</b>: dozens of environments assembled by hand over 25 years, no two alike. Closing that gap is exactly what Rhizome does.</p>
+
+        <div class="chain reveal">
+          <span class="chain-step">Kill Crystal</span><span class="chain-arrow">→</span>
+          <span class="chain-step">64-bit</span><span class="chain-arrow">→</span>
+          <span class="chain-step">Linux</span><span class="chain-arrow">→</span>
+          <span class="chain-step accent-step">Containers</span>
+        </div>
+        <p class="body wide reveal chain-note">One chain, not four projects. They unlock together, and everything after them is an estate operation, tenant by tenant.</p>
+
+        <div class="grid three">
+          <div class="card glow reveal">
+            <h3>Ground truth</h3>
+            <p>No migration wave can be planned without knowing, per tenant, the schema version, where every binary lives and what state each box is in. That dataset existed nowhere.</p>
+            <ul class="role-list">
+              <li>Produced live across <b class="accent">the whole estate</b> in minutes</li>
+              <li>Refreshed on demand, never stale</li>
+              <li>Turns wave planning from guesswork into a list</li>
+            </ul>
+          </div>
+          <div class="card glow reveal">
+            <h3>The prerequisite, at scale</h3>
+            <p>No tenant moves to the new platform below a minimum database version. A few are ready. Most are not, and every one of them is a bespoke, hand-assembled install.</p>
+            <ul class="role-list">
+              <li>The update runbook makes them <b class="accent">repeatable</b></li>
+              <li>From artisanry to a pipeline</li>
+              <li>The difference between a wave a quarter and a wave a week</li>
+            </ul>
+          </div>
+          <div class="card glow reveal">
+            <h3>Verified landings</h3>
+            <p>Every migrated tenant needs proof it actually works: app launch, schema version, print queues, certificates, reachability. Today that is manual sign-off.</p>
+            <ul class="role-list">
+              <li>Scripted checks instead of <b class="accent">consultant hours</b></li>
+              <li>Evidence attached to every cutover</li>
+              <li>Rollback decisions made on facts</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="body wide reveal split-line"><b>Dev builds the destination. Platform lays the runway.<br><span class="accent">Rhizome knows every origin box, brings it to the prerequisite, and verifies every landing.</span></b></p>
+        <p class="body wide reveal">And the window is open right now: the first customer has not gone live on the new platform yet. The runtime chosen for that first go-live sets the pattern for every tenant after it.</p>
       </div>
     </section>
 
