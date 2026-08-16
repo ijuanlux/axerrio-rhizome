@@ -122,6 +122,36 @@ gsap.ticker.lagSmoothing(0);
   });
 })();
 
+/* ---------- film: play with sound + loop, as early as the browser allows ----------
+   Browsers block audio before the first user gesture. So: try to play with sound
+   immediately; if blocked, fall back to muted playback and unmute on the very first
+   interaction (click / scroll / key / touch). It loops from then on. */
+(function filmSound() {
+  const v = document.querySelector('.film-video');
+  if (!v) return;
+  v.loop = true;
+
+  const withSound = () => { v.muted = false; v.volume = 1; return v.play(); };
+
+  // 1) try immediately (works only if this page already had a gesture)
+  withSound().catch(() => {
+    // 2) blocked: play muted so it is already running, then unmute on first gesture
+    v.muted = true;
+    v.play().catch(() => {});
+  });
+
+  let unlocked = false;
+  const unlock = () => {
+    if (unlocked) return;
+    unlocked = true;
+    v.muted = false;
+    v.volume = 1;
+    v.play().catch(() => {});
+  };
+  ['pointerdown', 'keydown', 'touchstart', 'wheel', 'scroll'].forEach((ev) =>
+    addEventListener(ev, unlock, { once: true, passive: true }));
+})();
+
 /* ---------- preloader ---------- */
 function boot() {
   const pre = document.querySelector('#preloader');
