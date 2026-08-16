@@ -126,9 +126,12 @@ h2{font-size:clamp(2.2rem,6vw,5.2rem);margin-bottom:.4em}
 .close{align-items:center;text-align:center}
 .close .body{margin:0 auto}
 .close-h{font-size:clamp(2.4rem,7vw,6rem);margin-bottom:.5em}
-.roles{grid-template-columns:repeat(3,1fr);margin:5vh 0 1vh;text-align:left}
+.roles{grid-template-columns:repeat(3,1fr);margin:0 0 2vh;text-align:left}
 @media(max-width:1000px){.roles{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.roles{grid-template-columns:1fr}}
+.role-group{display:flex;align-items:baseline;gap:.9em;flex-wrap:wrap;margin:5vh 0 1.6vh;padding-bottom:.7em;border-bottom:1px solid var(--line);text-align:left}
+.rg-label{font-size:1.5rem;font-weight:700;color:var(--fg)}
+.rg-sub{font-family:'Space Mono',monospace;font-size:.82rem;color:var(--muted);letter-spacing:.04em}
 .role{display:flex;flex-direction:column}
 .role-ic{font-size:2rem;color:var(--accent);margin-bottom:.3em}
 .role h3{font-size:1.5rem;font-weight:700}
